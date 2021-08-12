@@ -17,3 +17,13 @@ variable "slack_hook_url" {
   type    = string
   default = "https://hooks.slack.example.com/services/xxxxxxxx"
 }
+
+variable "event_rule_name" {
+  type    = string
+  default = "jobs_alert"
+}
+
+variable "target_status" {
+  type    = list(string)
+  default = ["FAILED"]
+}
